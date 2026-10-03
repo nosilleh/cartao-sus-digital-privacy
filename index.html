@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Política de Privacidade do aplicativo Cartão SUS Digital."
+    />
+    <title>Política de Privacidade | Cartão SUS Digital</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eef5fb;
+        --surface: #ffffff;
+        --text: #10243d;
+        --muted: #536a83;
+        --line: #d7e3ef;
+        --accent: #075fca;
+        --accent-strong: #073b8e;
+        --accent-soft: #e1efff;
+        --notice: #fff5d8;
+        --notice-line: #f1d47a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background:
+          radial-gradient(circle at 90% 0%, rgba(0, 210, 255, 0.2), transparent 34rem),
+          linear-gradient(180deg, #e8f3ff 0%, var(--bg) 35%, #f6f9fc 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #ffcb3d;
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--accent-strong), #087bdc 58%, #00aee8);
+        color: #fff;
+        border-radius: 28px;
+        padding: 34px 30px;
+        box-shadow: 0 24px 54px rgba(7, 59, 142, 0.2);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        right: -100px;
+        bottom: -180px;
+        border-radius: 50%;
+        border: 42px solid rgba(255, 209, 51, 0.85);
+      }
+
+      .hero > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .hero h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3.15rem);
+        line-height: 1.08;
+      }
+
+      .hero p {
+        margin: 0;
+        max-width: 760px;
+        color: rgba(255, 255, 255, 0.94);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .meta span {
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.92rem;
+      }
+
+      .summary,
+      .section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+      }
+
+      .summary {
+        margin-top: 18px;
+        padding: 22px;
+      }
+
+      .summary h2,
+      .section h2 {
+        margin: 0 0 12px;
+        line-height: 1.3;
+      }
+
+      .summary h2 {
+        font-size: 1.12rem;
+      }
+
+      .summary ul,
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .content {
+        display: grid;
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .section {
+        padding: 24px;
+      }
+
+      .section h2 {
+        font-size: 1.22rem;
+        color: var(--accent-strong);
+      }
+
+      .section p {
+        margin: 0 0 12px;
+      }
+
+      .section p:last-child,
+      .section ul:last-child {
+        margin-bottom: 0;
+      }
+
+      .notice {
+        margin-top: 14px;
+        padding: 16px 18px;
+        background: var(--notice);
+        border: 1px solid var(--notice-line);
+        border-radius: 18px;
+        color: #59440a;
+      }
+
+      .privacy-note {
+        background: var(--accent-soft);
+        border-color: #bad8fb;
+        color: #123d6d;
+      }
+
+      .footer {
+        margin-top: 22px;
+        padding: 20px 4px 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 20px 14px 42px;
+        }
+
+        .hero,
+        .section,
+        .summary {
+          border-radius: 22px;
+        }
+
+        .hero {
+          padding: 25px 20px;
+        }
+
+        .section,
+        .summary {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Cartão SUS Digital</p>
+        <h1>Política de Privacidade</h1>
+        <p>
+          Esta política explica como o aplicativo trata os dados cadastrados
+          pelo usuário, como funciona o armazenamento local e quais dados
+          técnicos podem ser processados pelo serviço de publicidade.
+        </p>
+        <div class="meta">
+          <span>Desenvolvedor: Hellison</span>
+          <span>Origem: Brasil</span>
+          <span>Atualização: 3 de outubro de 2026</span>
+        </div>
+      </header>
+
+      <section class="summary" aria-labelledby="resumo">
+        <h2 id="resumo">Resumo rápido</h2>
+        <ul>
+          <li>Os dados dos cartões permanecem armazenados localmente no aparelho.</li>
+          <li>O aplicativo não possui conta, servidor próprio ou cópia remota dos cartões.</li>
+          <li>Os dados cadastrados não são usados para personalizar anúncios.</li>
+          <li>O Google Mobile Ads pode processar dados técnicos e publicitários.</li>
+          <li>O aplicativo é independente e não possui vínculo oficial com o SUS ou o Governo Federal.</li>
+        </ul>
+      </section>
+
+      <div class="content">
+        <section class="section">
+          <h2>1. Identificação e escopo</h2>
+          <p>
+            Esta política se aplica ao aplicativo <strong>Cartão SUS Digital</strong>,
+            desenvolvido por <strong>Hellison</strong>. O aplicativo permite que o
+            próprio usuário cadastre uma representação digital dos dados de seus
+            cartões para consulta no dispositivo.
+          </p>
+          <div class="notice">
+            O aplicativo não possui vínculo com o Sistema Único de Saúde, o
+            Governo Federal ou qualquer órgão público, não consulta bases
+            governamentais, não valida os dados cadastrados e não substitui
+            documentos oficiais.
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>2. Dados informados pelo usuário</h2>
+          <p>O usuário pode cadastrar:</p>
+          <ul>
+            <li>número do Cartão Nacional de Saúde (CNS);</li>
+            <li>nome;</li>
+            <li>sexo;</li>
+            <li>data de nascimento;</li>
+            <li>CPF, de forma opcional.</li>
+          </ul>
+          <p>
+            O aplicativo não obtém essas informações de órgãos públicos. Todo o
+            conteúdo é fornecido e controlado pelo próprio usuário.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>3. Finalidade do tratamento</h2>
+          <p>Os dados cadastrados são utilizados exclusivamente para:</p>
+          <ul>
+            <li>montar a representação visual do cartão dentro do aplicativo;</li>
+            <li>permitir consulta rápida no próprio aparelho;</li>
+            <li>permitir criação, edição e exclusão de vários cartões;</li>
+            <li>exibir os cartões no modo apresentação.</li>
+          </ul>
+          <p>Esses dados não são utilizados para direcionar ou personalizar anúncios.</p>
+        </section>
+
+        <section class="section">
+          <h2>4. Armazenamento local, retenção e exclusão</h2>
+          <p>
+            Os dados dos cartões ficam armazenados localmente no dispositivo e
+            permanecem nele até que o usuário apague o cartão, limpe os dados do
+            aplicativo ou desinstale o aplicativo.
+          </p>
+          <p>
+            O Cartão SUS Digital não cria contas, não possui servidor próprio e
+            não mantém cópia remota ou mecanismo de recuperação dos cartões.
+            Portanto, não existe conteúdo de cartões a ser excluído remotamente
+            pelo desenvolvedor.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>5. Publicidade e dados técnicos</h2>
+          <p>
+            O aplicativo utiliza o <strong>Google Mobile Ads</strong> para exibir
+            anúncios. Conforme as configurações, escolhas de consentimento e
+            disponibilidade regional, o SDK pode coletar ou compartilhar:
+          </p>
+          <ul>
+            <li>endereço IP, que pode estimar uma localização aproximada;</li>
+            <li>interações com o aplicativo e com anúncios;</li>
+            <li>informações de diagnóstico e desempenho;</li>
+            <li>identificadores do dispositivo, do aplicativo ou da publicidade.</li>
+          </ul>
+          <p>
+            Esses dados podem ser usados pelo Google para publicidade, medição,
+            análise, segurança e prevenção de fraudes. O tráfego do SDK é
+            protegido durante a transmissão.
+          </p>
+          <p>
+            Consulte a
+            <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de Privacidade do Google</a>
+            e a página
+            <a href="https://business.safety.google/privacy/" rel="noopener noreferrer">Privacidade e segurança de dados empresariais do Google</a>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>6. Consentimento e opções de privacidade</h2>
+          <p>
+            Quando exigido pela região do usuário, o aplicativo solicita ao
+            serviço de consentimento do Google a apresentação das escolhas de
+            privacidade antes de carregar anúncios. Quando requerido pelo SDK,
+            o usuário também pode reabrir essas escolhas pela tela
+            <strong>Sobre e privacidade</strong> do aplicativo.
+          </p>
+          <div class="notice privacy-note">
+            As escolhas disponíveis e o tratamento realizado pelo Google podem
+            variar conforme a localização, a legislação aplicável e as
+            configurações da conta ou do aparelho.
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>7. Compartilhamento com terceiros</h2>
+          <p>
+            Os dados digitados nos cartões não são enviados ao desenvolvedor nem
+            compartilhados pelo aplicativo. O tratamento por terceiros limita-se
+            aos dados técnicos processados pelo Google Mobile Ads e aos serviços
+            necessários do sistema operacional, conforme descrito nesta política.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>8. Biometria e credencial do aparelho</h2>
+          <p>
+            Quando necessária para sair do modo apresentação, a autenticação é
+            executada pelo Android. O aplicativo não recebe nem armazena
+            impressão digital, imagem facial, PIN, padrão ou senha; recebe apenas
+            o resultado de sucesso, cancelamento ou falha informado pelo sistema.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>9. Segurança e limitações</h2>
+          <p>
+            O armazenamento local reduz a exposição dos dados, mas nenhuma forma
+            de armazenamento é completamente imune a falhas ou acesso indevido.
+            Quem tiver acesso ao aparelho desbloqueado poderá visualizar os
+            cartões cadastrados.
+          </p>
+          <p>
+            Recomenda-se proteger o dispositivo com senha, PIN, padrão ou
+            biometria e evitar o cadastro em aparelhos compartilhados sem
+            proteção adequada.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>10. Crianças e adolescentes</h2>
+          <p>
+            O aplicativo não é direcionado especificamente a crianças. O
+            responsável legal deve supervisionar o cadastro e a exibição de
+            informações de menores de idade.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>11. Direitos e solicitações</h2>
+          <p>
+            O usuário controla diretamente os cartões pelo aplicativo e pode
+            editar ou excluir os registros a qualquer momento. Como esses dados
+            não são enviados ao desenvolvedor, solicitações sobre dados técnicos
+            tratados pelo Google devem considerar também os controles e canais
+            disponibilizados pelo próprio Google.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>12. Alterações desta política</h2>
+          <p>
+            Esta política poderá ser atualizada para refletir mudanças no
+            aplicativo, nos serviços de terceiros, na legislação ou em requisitos
+            das plataformas de distribuição. A data apresentada no início da
+            página indicará a revisão mais recente.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>13. Contato de privacidade</h2>
+          <p>
+            Responsável: <strong>Hellison</strong><br />
+            E-mail:
+            <a href="mailto:hellisonvs@gmail.com">hellisonvs@gmail.com</a><br />
+            País: Brasil
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        Política de Privacidade do aplicativo <strong>Cartão SUS Digital</strong>.
+        Página pública destinada ao aplicativo e à sua ficha no Google Play.
+      </footer>
+    </main>
+  </body>
+</html>
